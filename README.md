@@ -2,7 +2,7 @@
 </p>
 
 <h1>osTicket - Prerequisites, Setup, and Installation</h1>
-This guide details the necessary requirements and steps for installing osTicket, an open-source help desk ticketing system.<br />
+This is a guide that details the necessary requirements and steps for installing osTicket, an open-source help desk ticketing system.<br />
 
 
 <h2>Environments and Technologies Used</h2>
@@ -24,24 +24,28 @@ This guide details the necessary requirements and steps for installing osTicket,
 - Rewrite Module
 - Heidi SQL
 
+<h2>What I Learned</h2>
+
+<p>My Assumptions and Knowledge I gained by going through this lab. Challenges and where previous knowledge was useful.</p>
+
 <h2>Installation Steps</h2>
 
+<h3>1. Create a Virtual Machine on Azure</h3>
 <p>
+To create virtual machine on Azure you need to first create a resource group. You should end up with the settings below. (feel free to shange the region based on your location)
 </p>
-<p>
-<h3>&#9312; Create a Virtual Machine on Azure</h3>
-The first step is to create a virtual machine on Azure. 
-Choose the image or base operating machine as Windows 10 Pro, version 22H2.</p>
-<p>
-<img width="758" alt="VM setup-windows 10" src="https://github.com/kirkgacias/osticket-prereqs/assets/158519921/a22b387c-d396-4fe5-8db9-7c2677941a30">
+<img width="442" alt="Resource group settings" src="https://github.com/user-attachments/assets/b450b1e7-4647-4439-b2d5-40313c8f0550">
 
 <p>
+Next, go to virtual machines and lick create. <br /> You will need to choose the image or base operating machine as Windows 10 Pro, version 22H2.
 </p>
-<p>
+
+Add my own image
+
 <strong> NOTE: Make sure to set the size to at least 2 vcpus and 16 GiB memory. 
-And confirm that RDP (3389) is allowed in "Select inbound ports" in order to allow Remote Desktop access to the VM.</strong> </p>
-<p>
-<img width="757" alt="VM inbound ports" src="https://github.com/kirkgacias/osticket-prereqs/assets/158519921/3eb204b9-a099-4656-a4ec-9d8badb1f56b">
+And confirm that RDP (3389) is allowed in "Select inbound ports" in order to allow Remote Desktop access to the VM.</strong> 
+
+Add my own image
 
 
 
@@ -51,7 +55,7 @@ And confirm that RDP (3389) is allowed in "Select inbound ports" in order to all
 <p>
 </p>
 <p>
-<h3>&#9313; Review and Create </h3>
+<h3>2. Review and Create </h3>
 <p>Click on the last check box to confirm an eligible Windows 10 license then proceed to "Review + create". A validation process will occur then once it has passed simply continue to create.</p>
 
 </p>
